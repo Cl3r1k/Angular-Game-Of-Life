@@ -1,6 +1,6 @@
 // To push changes on githubpages
-// ng build --prod --base-href "https://Cl3r1k.github.io/Angular-Recipe-Box/"
-// angular-cli-ghpages --repo="https://github.com/Cl3r1k/Angular-Recipe-Box.git" --name=Cl3r1k --email=cl3r1k2@gmail.com --no-silent
+// ng build --prod --base-href "https://Cl3r1k.github.io/Angular-Game-Of-Life/"
+// angular-cli-ghpages --repo="https://github.com/Cl3r1k/Angular-Game-Of-Life.git" --name=Cl3r1k --email=cl3r1k2@gmail.com --no-silent
 
 Commit message:
 
@@ -11,37 +11,38 @@ Todos:
 
             ✔ Change styles to scss @done(18-04-03 17:35)
 
-        ☐ Add social icons (look here https://blog.angular-university.io/rxjs-switchmap-operator/)
+        ☐ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`)
 
-        ☐ Write business logic (look here https://codepen.io/freeCodeCamp/full/xVXWag)
-            ☐ I can create recipes that have names and ingredients.
-            ☐ I can see an index view where the names of all the recipes are visible.
-            ☐ I can click into any of those recipes to view it.
-            ☐ I can edit these recipes.
-            ☐ I can delete these recipes.
-            ☐ All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there.
-                
-        ☐ Use modal for editing/adding:
-            `http://brianflove.com/2017/07/17/angular-delete-confirmation/`
-            `https://blog.thoughtram.io/angular/2017/11/13/easy-dialogs-with-angular-material.html`
-            `https://medium.com/codingthesmartway-com-blog/angular-material-part-2-popups-modals-1ed0c2405f18`
-            `https://alligator.io/angular/dialogs-angular-material/`
+        ☐ Write business logic (look here `https://codepen.io/freeCodeCamp/full/reGdqx`)
+            ☐ When I first arrive at the game, it will randomly generate a board and start playing
+            ☐ I can start and stop the board
+            ☐ I can set up the board
+            ☐ I can clear the board
+            ☐ When I press start, the game will play out
+            ☐ Each time the board changes, I can see how many generations have gone by
+        ☐ Posibility to add cells by moving holded mouse over it
             
         ☐ Change header icon
         ☐ Change footer icon
 
         Hint:
-            ☐ You should prefix your local storage keys on CodePen, i.e. _username_recipes
+            ☐ Here's an explanation of Conway's Game of Life from John Conway himself:
+                `https://www.youtube.com/watch?v=E8kUJL04ELA`
+            ☐ Here's an overview of Conway's Game of Life with rules for your reference:
+                `https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life`
+                `http://www.math.cornell.edu/~lipa/mec/lesson6.html`
 
         ☐ Build UI (examples are bellow)
             ☐ Some UI ideas from:
-                `https://codepen.io/freeCodeCamp/full/xVXWag`
+                `https://codepen.io/freeCodeCamp/full/reGdqx`
+                `https://bitstorm.org/gameoflife/`
+                `http://web.stanford.edu/~cdebs/GameOfLife/`
 
-        ☐ Add 'Fork on github' in the corner or github share link (like here https://codepen.io/hmps/pen/kiFum) (used ribbon)
-        ☐ Add spinner before Angular main component loaded (use https://jsfiddle.net/Cl3r1k/hyqdzgfn/)
-        ☐ Change flexbox to CSS Grids (look here https://proglib.io/p/css-grid-vs-bootstrap/ and here https://proglib.io/p/css-grid/)
-        ☐ Add footer (preferably fixed bottom)
-            ☐ Steaky-footer on CSS Grid (look here https://codepen.io/matuzo/pen/JOyzOj?editors=1100)
+        ✔ Add 'Fork on github' in the corner or github share link (like here `https://codepen.io/hmps/pen/kiFum`) (used ribbon) @done(18-04-03 18:45)
+        ✔ Add spinner before Angular main component loaded (use `https://jsfiddle.net/Cl3r1k/hyqdzgfn/`) @done(18-04-03 18:45)
+        ✔ Change flexbox to CSS Grids (look here `https://proglib.io/p/css-grid-vs-bootstrap/` and here `https://proglib.io/p/css-grid/`) @done(18-04-03 18:45)
+        ✔ Add footer (preferably fixed bottom) @done(18-04-03 18:45)
+            ✔ Steaky-footer on CSS Grid (look here `https://codepen.io/matuzo/pen/JOyzOj?editors=1100`) @done(18-04-03 18:45)
         
         ☐ Correct e2e test
         ☐ Write Unit tests
