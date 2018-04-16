@@ -7,12 +7,13 @@
 $bgBodyColor: #ffffff;
 $anchorColor: #17840b;
 $debugMode: 'true';
-$gridHeaderColor: #4a4a4a;
+$gridHeaderColor: #616161;
 $gridContentColor: none;
 $gridFooterColor: none;
+$headerTextColor: #dff0d8;
 // Debuging for grid
 // $gridHeaderColor: #19d5f7;
-// $gridContentColor: #fc8ff6;
+$gridContentColor: #ffddfd;
 // $gridFooterColor: #7ae6a9;
 html,
 body,
@@ -65,6 +66,9 @@ body {
         background-color: $gridHeaderColor;
         .header-title {
             display: inline-block;
+            a {
+                color: $headerTextColor;
+            }
         }
     }
     .content {
@@ -100,7 +104,7 @@ body {
     font-size: 40px;
     margin-bottom: -12px;
     margin-right: 5px;
-    color: #dff0d8;
+    color: $headerTextColor;
 }
 
 .icon-receipt {

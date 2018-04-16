@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
     hiddenSocialIcons = true;
     iconsHovered = false;
+    generation = 0;
 
     constructor() { }
 

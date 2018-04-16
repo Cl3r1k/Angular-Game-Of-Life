@@ -1,12 +1,70 @@
+$boardColor: #7c7c7c;
 .wrapper {
-    margin: 10px 0 10px 0;
+    // margin: 10px 0 10px 0;
+    // padding-top: 10px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 10px;
     .game-container {
+        display: grid;
+        background-color: #53a524; // For debug
         margin: 0;
         grid-column: 3/11;
+        align-items: center;
+        .board-container {
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            width: 600px;
+            // height: 500px;
+            border-radius: 3px;
+            background-color: #f5f5f5; // For debug
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            .board-header {
+                background-color: $boardColor;
+                border-radius: 5px 5px 0 0;
+                height: 50px;
+                width: 500px;
+                margin: 0 auto;
+                padding: 5px;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                align-items: center;
+                span {
+                    grid-column: span 2;
+                }
+            }
+            .board-content {
+                background-color: #163563; // For debug
+                height: 350px;
+                border: 10px solid $boardColor;
+                border-radius: 5px;
+            }
+            .board-footer {
+                background-color: $boardColor; // For debug
+                border-radius: 0 0 5px 5px;
+                height: 50px;
+                width: 500px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                align-items: center;
+            }
+            .board-annotation {
+                background-color: $boardColor; // For debug
+                border-radius: 5px;
+                height: 50px;
+                width: 500px;
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 5px;
+                display: grid;
+                align-items: center;
+                p {
+                    margin: 0;
+                }
+            }
+        }
         // .recipe-list {
         //     border: 1px solid #e3e3e3;
         //     border-radius: 3px;

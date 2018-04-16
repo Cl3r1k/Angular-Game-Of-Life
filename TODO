@@ -12,6 +12,7 @@ Todos:
             ✔ Change styles to scss @done(18-04-03 17:35)
 
         ☐ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`)
+            ☐ Change social icons like here `https://crypto-bridge.org/`
 
         ☐ Write business logic (look here `https://codepen.io/freeCodeCamp/full/reGdqx`)
             ☐ When I first arrive at the game, it will randomly generate a board and start playing
@@ -24,6 +25,10 @@ Todos:
             
         ☐ Change header icon
         ☐ Change footer icon
+
+        ☐ 'Fork me if you can' and on mouse over hide the ribbon)))
+
+        ☐ Use SVG icons instead buttons
 
         Hint:
             ☐ Here's an explanation of Conway's Game of Life from John Conway himself:
