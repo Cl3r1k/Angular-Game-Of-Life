@@ -11,7 +11,7 @@ Todos:
 
             ✔ Change styles to scss @done(18-04-03 17:35)
 
-        ☐ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`)
+        ✔ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`) @done(18-04-16 17:54)
             ☐ Change social icons like here `https://crypto-bridge.org/`
 
         ☐ Write business logic (look here `https://codepen.io/freeCodeCamp/full/reGdqx`)
@@ -28,7 +28,7 @@ Todos:
 
         ☐ 'Fork me if you can' and on mouse over hide the ribbon)))
 
-        ☐ Use SVG icons instead buttons
+        ☐ Use SVG icons instead of buttons
 
         Hint:
             ☐ Here's an explanation of Conway's Game of Life from John Conway himself:
@@ -42,6 +42,8 @@ Todos:
                 `https://codepen.io/freeCodeCamp/full/reGdqx`
                 `https://bitstorm.org/gameoflife/`
                 `http://web.stanford.edu/~cdebs/GameOfLife/`
+                `https://codepen.io/bigsweater/pen/borNym`
+                `https://codepen.io/alanrsoares/pen/payKn`
 
         ✔ Add 'Fork on github' in the corner or github share link (like here `https://codepen.io/hmps/pen/kiFum`) (used ribbon) @done(18-04-03 18:45)
         ✔ Add spinner before Angular main component loaded (use `https://jsfiddle.net/Cl3r1k/hyqdzgfn/`) @done(18-04-03 18:45)

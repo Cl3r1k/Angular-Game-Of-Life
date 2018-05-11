@@ -74,21 +74,32 @@
                     <div class='board-header'>
                         <button>Run</button>
                         <button>Pause</button>
-                        <button>Clear</button>
+                        <button (click)='resetGrid()'>Clear</button>
                         <span>Generation: {{generation}}</span>
                     </div>
                     <div class='board-content'>
+                        <!-- <div class='grid'>
+                            <div *ngFor='let row of grid'>
+                                <div *ngFor='let cell of row'>{{cell}}</div>
+                            </div>
+                        </div> -->
+
+                        <table>
+                            <tr *ngFor='let row of grid; let x = index'>
+                                <td *ngFor='let cell of row;  let y = index' (click)='toggle(x, y)' class='cell' [class.alive]='cell'></td>
+                            </tr>
+                        </table>
 
                     </div>
                     <div class='board-footer'>
                         <span>Board Size:</span>
-                        <button>Size: 50x30</button>
-                        <button>Size: 70x50</button>
-                        <button>Size: 100x80</button>
+                        <button (click)='setGridSize(30, 50)'>Size: 50x30</button>
+                        <button (click)='setGridSize(50, 70)'>Size: 70x50</button>
+                        <button (click)='setGridSize(80, 100)'>Size: 100x80</button>
                         <span>Sim Speed:</span>
-                        <button>Slow</button>
-                        <button>Medium</button>
-                        <button>Fast</button>
+                        <button (click)='setSpeed(1)'>Slow</button>
+                        <button (click)='setSpeed(3)'>Medium</button>
+                        <button (click)='setSpeed(5)'>Fast</button>
                     </div>
 
                     <div class='board-annotation'>
