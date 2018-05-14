@@ -10,6 +10,7 @@ Todos:
         Current:
 
             ✔ Change styles to scss @done(18-04-03 17:35)
+            ✔ Update to CLI 6.0.1 @done(18-05-11 18:03)
 
         ✔ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`) @done(18-04-16 17:54)
             ☐ Change social icons like here `https://crypto-bridge.org/`
