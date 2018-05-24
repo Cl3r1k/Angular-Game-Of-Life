@@ -72,9 +72,10 @@
             <div class='game-container'>
                 <div class='board-container'>
                     <div class='board-header'>
-                        <button>Run</button>
-                        <button>Pause</button>
-                        <button (click)='resetGrid()'>Clear</button>
+                        <button (click)='run()'>Run</button>
+                        <button (click)='togglePause()'>Pause</button>
+                        <button (click)='generateGrid(0)'>Clear</button>
+                        <button (click)='generateGrid(1)'>Reset</button>
                         <span>Generation: {{generation}}</span>
                     </div>
                     <div class='board-content'>

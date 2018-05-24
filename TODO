@@ -15,13 +15,13 @@ Todos:
         ✔ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`) @done(18-04-16 17:54)
             ☐ Change social icons like here `https://crypto-bridge.org/`
 
-        ☐ Write business logic (look here `https://codepen.io/freeCodeCamp/full/reGdqx`)
-            ☐ When I first arrive at the game, it will randomly generate a board and start playing
-            ☐ I can start and stop the board
-            ☐ I can set up the board
-            ☐ I can clear the board
-            ☐ When I press start, the game will play out
-            ☐ Each time the board changes, I can see how many generations have gone by
+        ✔ Write business logic (look here `https://codepen.io/freeCodeCamp/full/reGdqx`) @done(18-05-24 17:38)
+            ✔ When I first arrive at the game, it will randomly generate a board and start playing @done(18-05-24 17:37)
+            ✔ I can start and stop the board @done(18-05-24 17:37)
+            ✔ I can set up the board @done(18-05-24 17:37)
+            ✔ I can clear the board @done(18-05-24 17:37)
+            ✔ When I press start, the game will play out @done(18-05-24 17:37)
+            ✔ Each time the board changes, I can see how many generations have gone by @done(18-05-24 17:37)
         ☐ Posibility to add cells by moving holded mouse over it
             
         ☐ Change header icon
@@ -45,6 +45,9 @@ Todos:
                 `http://web.stanford.edu/~cdebs/GameOfLife/`
                 `https://codepen.io/bigsweater/pen/borNym`
                 `https://codepen.io/alanrsoares/pen/payKn`
+            
+        ☐ Previous example:
+            `http://www.codeabbey.com/index/task_solution?task=life-is-simple&user=cl3r1k&lang=C%23`
 
         ✔ Add 'Fork on github' in the corner or github share link (like here `https://codepen.io/hmps/pen/kiFum`) (used ribbon) @done(18-04-03 18:45)
         ✔ Add spinner before Angular main component loaded (use `https://jsfiddle.net/Cl3r1k/hyqdzgfn/`) @done(18-04-03 18:45)
