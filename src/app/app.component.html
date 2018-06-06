@@ -72,10 +72,10 @@
             <div class='game-container'>
                 <div class='board-container'>
                     <div class='board-header'>
-                        <button (click)='run()'>Run</button>
-                        <button (click)='togglePause()'>Pause</button>
-                        <button (click)='generateGrid(0)'>Clear</button>
-                        <button (click)='generateGrid(1)'>Reset</button>
+                        <button (click)='run()' class='btn-styled' [class.active]='isAlive'>Run</button>
+                        <button (click)='togglePause()' class='btn-styled' [class.active]='pauseState'>Pause</button>
+                        <button (click)='generateGrid(0)' class='btn-styled' [class.active]='resetState'>Clear</button>
+                        <button (click)='generateGrid(1)' class='btn-styled' [class.active]='generateState'>Reset</button>
                         <span>Generation: {{generation}}</span>
                     </div>
                     <div class='board-content'>
@@ -94,17 +94,17 @@
                     </div>
                     <div class='board-footer'>
                         <span>Board Size:</span>
-                        <button (click)='setGridSize(30, 50)'>Size: 50x30</button>
-                        <button (click)='setGridSize(50, 70)'>Size: 70x50</button>
-                        <button (click)='setGridSize(80, 100)'>Size: 100x80</button>
+                        <button (click)='setGridSize(30, 50)' class='btn-styled' [class.active]='lengthX === 30'>Size: 50x30</button>
+                        <button (click)='setGridSize(50, 70)' class='btn-styled' [class.active]='lengthX === 50'>Size: 70x50</button>
+                        <button (click)='setGridSize(80, 100)' class='btn-styled' [class.active]='lengthX === 80'>Size: 100x80</button>
                         <span>Sim Speed:</span>
-                        <button (click)='setSpeed(1)'>Slow</button>
-                        <button (click)='setSpeed(3)'>Medium</button>
-                        <button (click)='setSpeed(5)'>Fast</button>
+                        <button (click)='setSpeed(1)' class='btn-styled' [class.active]='speed === 1'>Slow</button>
+                        <button (click)='setSpeed(3)' class='btn-styled' [class.active]='speed === 3'>Medium</button>
+                        <button (click)='setSpeed(5)' class='btn-styled' [class.active]='speed === 5'>Fast</button>
                     </div>
 
                     <div class='board-annotation'>
-                        <p>Feel free to add cells while it's running. The cells in light red are younger, dark red are older. Have fun!</p>
+                        <p>Feel free to add cells while it's running. If you can handle high speed, or just pause it. Have fun!</p>
                     </div>
                 </div>
                 <!-- <div class='recipe-list'>
@@ -144,7 +144,7 @@
             <p class='text-center'>
                 <svg class='icon icon-receipt'>
                   <use xlink:href='#icon-receipt'></use>
-              </svg> Made with <img width='30' alt='Angular' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo='>                by <a href='https://www.freecodecamp.com/cl3r1k' target='_blank'>Cl3r1k</a></p>
+              </svg> Made with <img width='30' alt='Angular' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo='>                by <a href='https://github.com/Cl3r1k' target='_blank'>Cl3r1k</a></p>
         </div>
     </div>
 </div>

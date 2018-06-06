@@ -1,4 +1,5 @@
 $boardColor: #747474;
+$boardShadowColor: #02021b;
 .wrapper {
     // margin: 10px 0 10px 0;
     // padding-top: 10px;
@@ -7,7 +8,7 @@ $boardColor: #747474;
     grid-template-columns: repeat(12, 1fr);
     .game-container {
         display: grid;
-        background-color: #53a524; // For debug
+        // background-color: #53a524; // For debug
         margin: 0;
         grid-column: 3/11;
         align-items: center;
@@ -18,8 +19,8 @@ $boardColor: #747474;
             // width: 600px;
             // height: 500px;
             border-radius: 3px;
-            background-color: #f5f5f5; // For debug
-            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+            // background-color: #f5f5f5; // For debug
+            // -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
             .board-header {
                 background-color: $boardColor;
                 border-radius: 5px 5px 0 0;
@@ -28,14 +29,15 @@ $boardColor: #747474;
                 margin: 0 auto;
                 padding: 5px;
                 display: grid;
-                grid-template-columns: repeat(6, 1fr);
+                grid-template-columns: repeat(7, 1fr);
                 align-items: center;
+                box-shadow: 0px 16px 30px 0px $boardShadowColor;
                 button {
                     width: 90px;
-                    margin: 0 auto;
+                    margin: 4px;
                 }
                 span {
-                    grid-column: span 2;
+                    grid-column: span 3;
                     // padding-right: 40px;
                     color: floralwhite;
                 }
@@ -46,6 +48,7 @@ $boardColor: #747474;
                 border: 10px solid $boardColor;
                 border-radius: 5px;
                 color: white;
+                box-shadow: 0px 16px 30px 0px $boardShadowColor;
                 .cell {
                     background-color: rebeccapurple;
                     width: 10px;
@@ -58,7 +61,7 @@ $boardColor: #747474;
             .board-footer {
                 background-color: $boardColor; // For debug
                 border-radius: 0 0 5px 5px;
-                height: 50px;
+                height: 75px;
                 width: 500px;
                 margin: 0 auto;
                 padding: 5px;
@@ -66,6 +69,7 @@ $boardColor: #747474;
                 grid-template-columns: repeat(4, 1fr);
                 align-items: center;
                 color: #d3d3d3;
+                box-shadow: 0px 16px 30px 0px $boardShadowColor;
             }
             .board-annotation {
                 background-color: $boardColor; // For debug
@@ -77,6 +81,7 @@ $boardColor: #747474;
                 padding: 5px;
                 display: grid;
                 align-items: center;
+                box-shadow: 0px 16px 30px 0px $boardShadowColor;
                 p {
                     margin: 0;
                     color: floralwhite;
@@ -203,12 +208,13 @@ $boardColor: #747474;
     border-radius: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #fff;
+    color: white;
+    background-color: #333333;
     cursor: pointer;
-    font-size: 17px;
+    // font-size: 17px;
     font-weight: 500;
-    margin: 15px 5px 0;
-    padding: 10px 32px;
+    margin: 5px;
+    padding: 5px;
     &.button-delete {
         background-color: #dd3333;
     }
@@ -220,4 +226,8 @@ $boardColor: #747474;
     &.button-add {
         background-color: #53a524;
     }
+}
+
+.active {
+    background-color: coral;
 }

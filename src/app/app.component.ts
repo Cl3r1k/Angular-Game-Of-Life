@@ -12,10 +12,12 @@ export class AppComponent implements OnInit {
 
     lengthX = 50;
     lengthY = 70;
-    speed = 3;
+    speed = 5;
     interval;
     isAlive = false;
     pauseState = false;
+    generateState = false;
+    resetState = false;
 
     grid = [];
     // grid = [
@@ -68,6 +70,16 @@ export class AppComponent implements OnInit {
     // }
 
     generateGrid(state: number) {
+        if (!state) {
+            this.resetState = true;
+        } else {
+            this.generateState = true;
+        }
+
+        setTimeout(() => {
+            this.generateState = false;
+            this.resetState = false;
+        }, 900);
         this.generation = 0;
         clearInterval(this.interval);
         this.isAlive = false;
@@ -199,10 +211,7 @@ export class AppComponent implements OnInit {
         this.grid = metaGrid;
 
         if (!active) {
-            clearInterval(this.interval);
-            this.generation = 0;
-            this.isAlive = false;
-            this.generation = 0;
+            this.generateGrid(0);
         }
     }
 }

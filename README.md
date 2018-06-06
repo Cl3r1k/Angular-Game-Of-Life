@@ -4,7 +4,7 @@ Game Of Life app with Angular CLI
 
 Demo: https://Cl3r1k.github.io/Angular-Game-Of-Life/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
 ## Development server
 
