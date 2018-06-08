@@ -5,7 +5,7 @@
 @import 'spinner';
 @import 'loader';
 $bgBodyColor: #ffffff;
-$anchorColor: #17840b;
+$anchorColor: #00ffff;
 $debugMode: 'true';
 $gridHeaderColor: #616161;
 $gridContentColor: none;
@@ -23,14 +23,12 @@ p {
 }
 
 html {
-    // height: auto !important;
     min-height: 100%;
     min-width: 100%;
 }
 
 body {
     // background-color: $bgBodyColor;
-    // background-image: radial-gradient(#F1F2B5, #283c86);
     color: #333;
     width: 100%;
 }
@@ -44,40 +42,6 @@ a:hover {
 }
 
 // CSS Grid site template with sticky footer (https://codepen.io/Cl3r1k/pen/WdbRER)
-// html,
-// body {
-//     height: 100%;
-//     background-image: linear-gradient(40deg, #283c86, #F1F2B5);
-// }
-// body {
-//     margin: 0;
-// }
-// body {
-//     display: grid;
-//     grid-gap: 10px;
-//     height: 100%;
-//     grid-template-columns: 1fr;
-//     grid-template-areas: "head" "main" "footer";
-//     grid-template-rows: 100px 1fr 80px;
-// }
-// .header {
-//     grid-area: head;
-// }
-// .content {
-//     grid-area: main;
-// }
-// .footer {
-//     grid-area: footer;
-// }
-// .header {
-//     background-color: #7E57C2;
-// }
-// .content {
-//     background-color: #F8BBD0;
-// }
-// .footer {
-//     background-color: #371e64;
-// }
 html {
     height: 100%;
 }
@@ -112,7 +76,6 @@ body {
         grid-column: span 12;
         background-color: $gridContentColor;
         padding: 10px 0;
-        // background-image: linear-gradient(40deg, #283c86, #F1F2B5);
         background-image: radial-gradient(#F1F2B5, #283c86);
     }
     .footer {
@@ -121,7 +84,7 @@ body {
         grid-column: span 12;
         padding-top: 15px;
         padding-bottom: 5px;
-        // background-image: linear-gradient(40deg, #283c86, #F1F2B5);
+        color: white;
         p {
             font-weight: 600;
         }
@@ -140,17 +103,17 @@ body {
     fill: currentColor;
 }
 
-.icon-spoon-knife {
+.icon-puzzle {
     font-size: 40px;
-    margin-bottom: -12px;
+    margin-bottom: -10px;
     margin-right: 5px;
-    color: $headerTextColor;
+    color: #53f314;
 }
 
-.icon-receipt {
-    font-size: 22px;
-    margin-bottom: -5px;
-    color: #1b8fb1;
+.icon-dice {
+    font-size: 26px;
+    margin-bottom: -6px;
+    color: $anchorColor;
 }
 
 // Styles for text

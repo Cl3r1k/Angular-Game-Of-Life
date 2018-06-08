@@ -53,15 +53,17 @@
         height: 50px;
         width: 50px;
         text-align: center;
-        transition: width 0.1s linear;
+        transition: all 0.2s ease-out;
         &.twitter {
             background-color: #1da1f2;
+            border-top-right-radius: 15px;
         }
         &.github {
             background-color: #33393f;
         }
         &.freecodecamp {
             background-color: darkgreen;
+            border-bottom-right-radius: 15px;
         }
         a {
             color: white;
@@ -72,9 +74,9 @@
         }
         &:hover {
             cursor: pointer;
-            width: 70px;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
+            width: 90px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
         }
     }
 }

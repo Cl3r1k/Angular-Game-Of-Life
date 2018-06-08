@@ -7,14 +7,19 @@ Commit message:
     
 Todos:
     New:
-        Current:
+        Current:            
+        
+        ✔ Correct e2e test @done(18-06-07 17:11)
+        ✔ Write Unit tests @done(18-06-08 19:03)
+        ☐ Deploy on gh-pages
+            
+    Done:
 
-            ✔ Change styles to scss @done(18-04-03 17:35)
-            ✔ Update to CLI 6.0.1 @done(18-05-11 18:03)
+        ✔ Update Readme.md and .gitignore @done(18-04-03 17:19)
 
-        ✔ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`) @done(18-04-16 17:54)
-            ☐ Change social icons like here `https://crypto-bridge.org/`
-
+        ✔ Change styles to scss @done(18-04-03 17:35)
+        ✔ Update to CLI 6.0.1 @done(18-05-11 18:03)
+        
         ✔ Write business logic (look here `https://codepen.io/freeCodeCamp/full/reGdqx`) @done(18-05-24 17:38)
             ✔ When I first arrive at the game, it will randomly generate a board and start playing @done(18-05-24 17:37)
             ✔ I can start and stop the board @done(18-05-24 17:37)
@@ -22,49 +27,39 @@ Todos:
             ✔ I can clear the board @done(18-05-24 17:37)
             ✔ When I press start, the game will play out @done(18-05-24 17:37)
             ✔ Each time the board changes, I can see how many generations have gone by @done(18-05-24 17:37)
-        ☐ Posibility to add cells by moving holded mouse over it
-            
-        ☐ Change header icon
-        ☐ Change footer icon
-
-        ☐ 'Fork me if you can' and on mouse over hide the ribbon)))
-
-        ☐ Use SVG icons instead of buttons
-
-        Hint:
-            ☐ Here's an explanation of Conway's Game of Life from John Conway himself:
-                `https://www.youtube.com/watch?v=E8kUJL04ELA`
-            ☐ Here's an overview of Conway's Game of Life with rules for your reference:
-                `https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life`
-                `http://www.math.cornell.edu/~lipa/mec/lesson6.html`
-
-        ☐ Build UI (examples are bellow)
-            ☐ Some UI ideas from:
-                `https://codepen.io/freeCodeCamp/full/reGdqx`
-                `https://bitstorm.org/gameoflife/`
-                `http://web.stanford.edu/~cdebs/GameOfLife/`
-                `https://codepen.io/bigsweater/pen/borNym`
-                `https://codepen.io/alanrsoares/pen/payKn`
-            
-        ☐ Previous example:
-            `http://www.codeabbey.com/index/task_solution?task=life-is-simple&user=cl3r1k&lang=C%23`
 
         ✔ Add 'Fork on github' in the corner or github share link (like here `https://codepen.io/hmps/pen/kiFum`) (used ribbon) @done(18-04-03 18:45)
         ✔ Add spinner before Angular main component loaded (use `https://jsfiddle.net/Cl3r1k/hyqdzgfn/`) @done(18-04-03 18:45)
         ✔ Change flexbox to CSS Grids (look here `https://proglib.io/p/css-grid-vs-bootstrap/` and here `https://proglib.io/p/css-grid/`) @done(18-04-03 18:45)
         ✔ Add footer (preferably fixed bottom) @done(18-04-03 18:45)
             ✔ Steaky-footer on CSS Grid (look here `https://codepen.io/matuzo/pen/JOyzOj?editors=1100`) @done(18-04-03 18:45)
-        
-        ☐ Correct e2e test
-        ☐ Write Unit tests
-        ☐ Deploy on gh-pages
+
+        ✔ Add social icons (look here `https://blog.angular-university.io/rxjs-switchmap-operator/`) @done(18-04-16 17:54)
+            ✔ Change social icons like here `https://crypto-bridge.org/` @done(18-06-07 16:56)
             
-    Done:
+        ✔ Change header icon @done(18-06-07 16:25)
+        ✔ Change footer icon @done(18-06-07 16:25)
 
-        ✔ Update Readme.md and .gitignore @done(18-04-03 17:19)
+        Hint:
+            Here's an explanation of Conway's Game of Life from John Conway himself:
+                `https://www.youtube.com/watch?v=E8kUJL04ELA`
+            Here's an overview of Conway's Game of Life with rules for your reference:
+                `https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life`
+                `http://www.math.cornell.edu/~lipa/mec/lesson6.html`
 
-        
+        Build UI (examples are bellow):
+            Some UI ideas from:
+                `https://codepen.io/freeCodeCamp/full/reGdqx`
+                `https://bitstorm.org/gameoflife/`
+                `http://web.stanford.edu/~cdebs/GameOfLife/`
+                `https://codepen.io/bigsweater/pen/borNym`
+                `https://codepen.io/alanrsoares/pen/payKn`
+            
+        Previous example:
+            `http://www.codeabbey.com/index/task_solution?task=life-is-simple&user=cl3r1k&lang=C%23`
 
     Canceled:
         ✘ Deploy on codepen -> gh-pages will be enough @cancelled(18-03-27 16:02)
-        
+        ✘ Posibility to add cells by moving holded mouse over it -> Next time @cancelled(18-06-07 15:59)
+        ✘ Use SVG icons instead of buttons -> buttons are fine @cancelled(18-06-07 16:57)
+        ✘ 'Fork me if you can' and on mouse over hide the ribbon))) -> No need anymore @cancelled(18-06-07 17:00)

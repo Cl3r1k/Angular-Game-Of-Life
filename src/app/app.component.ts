@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
     hiddenSocialIcons = true;
     iconsHovered = false;
-    generation = 0;
 
-    lengthX = 50;
-    lengthY = 70;
+    generation = 0;
+    lengthX = 30;
+    lengthY = 50;
     speed = 5;
     interval;
     isAlive = false;
@@ -53,21 +53,6 @@ export class AppComponent implements OnInit {
         // console.log('x: %d, y: %d, content is: %d', x, y, this.grid[x][y]);
         this.grid[x][y] = this.grid[x][y] === 0 ? 1 : 0;
     }
-
-    // clearGrid() {
-    //     this.generation = 0;
-    //     clearInterval(this.interval);
-
-    //     this.grid = [];
-
-    //     for (let x = 0; x < this.lengthX; x++) {
-    //         const row: number[] = [];
-    //         for (let y = 0; y < this.lengthY; y++) {
-    //             row.push(0);
-    //         }
-    //         this.grid.push(row);
-    //     }
-    // }
 
     generateGrid(state: number) {
         if (!state) {
