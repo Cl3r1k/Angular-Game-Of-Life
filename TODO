@@ -9,9 +9,6 @@ Todos:
     New:
         Current:            
         
-        ✔ Correct e2e test @done(18-06-07 17:11)
-        ✔ Write Unit tests @done(18-06-08 19:03)
-        ☐ Deploy on gh-pages
             
     Done:
 
@@ -39,6 +36,11 @@ Todos:
             
         ✔ Change header icon @done(18-06-07 16:25)
         ✔ Change footer icon @done(18-06-07 16:25)
+
+        ✔ Correct e2e test @done(18-06-07 17:11)
+        ✔ Write Unit tests @done(18-06-08 19:03)
+
+        ✔ Deploy on gh-pages @done(18-06-11 15:20)
 
         Hint:
             Here's an explanation of Conway's Game of Life from John Conway himself:
